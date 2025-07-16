@@ -1,0 +1,23 @@
+{
+  "name": "belajar-expressjs",
+  "version": "1.0.0",
+  "description": "develop expressjs app with docker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunuazizrahayu/belajar-expressjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunuazizrahayu/belajar-expressjs/issues"
+  },
+  "homepage": "https://github.com/sunuazizrahayu/belajar-expressjs#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
