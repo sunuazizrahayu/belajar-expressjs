@@ -1,8 +1,12 @@
 # Belajar Express JS
 
 ## Create New Project
-```docker-compose run --rm --user $(id -u):$(id -g) app npm init -y```
-```docker-compose run --rm --user $(id -u):$(id -g) app npm install express```
+```
+docker-compose run --rm --user $(id -u):$(id -g) app npm init -y
+```
+```
+docker-compose run --rm --user $(id -u):$(id -g) app npm install express
+```
 
 ## Prepare Project
 1. Edit `package.json`
