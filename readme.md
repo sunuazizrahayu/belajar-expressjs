@@ -16,3 +16,8 @@ docker-compose run --rm --user $(id -u):$(id -g) app npm install express
   "start": "node index.js"
 }
 ```
+
+## Running App
+```
+docker-compose run --rm --name=belajar-expressjs --user $(id -u):$(id -g) -p 3000:80 app npm run devStart
+```
