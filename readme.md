@@ -1,4 +1,5 @@
 # Belajar Express JS
+Develop ExpressJS App with docker
 
 ## Create Project From Scratch
 ### Create New Project
@@ -9,8 +10,10 @@ docker-compose run --rm --user $(id -u):$(id -g) app npm init -y
 ```
 docker-compose run --rm --user $(id -u):$(id -g) app npm install express
 ```
-### Install Nodemon for auto reload
+### Install nodemon for Auto Reload
+```
 docker-compose run --rm --user $(id -u):$(id -g) app npm install --save-dev nodemon
+```
 
 ## Prepare Project
 1. Edit `package.json`

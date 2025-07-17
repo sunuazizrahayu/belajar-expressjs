@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: belajar-expressjs
+    image: belajar-expressjs
+    build:
+      context: ./../
+      dockerfile: docker/Dockerfile.dev
+    user: 1000:1000 # fix volume permission, get user id and group id by: `echo $(id -u)` and `echo $(id -g)`
+    volumes:
+      - ./../:/app
+    ports:
+      - "127.0.0.1:3000:80"
