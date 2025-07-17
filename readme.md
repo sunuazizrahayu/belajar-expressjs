@@ -4,15 +4,15 @@ Develop ExpressJS App with docker
 ## Create Project From Scratch
 ### Create New Project
 ```
-docker-compose run --rm --user $(id -u):$(id -g) app npm init -y
+docker-compose -f docker/docker-compose.dev.yml run --rm --user $(id -u):$(id -g) app npm init -y
 ```
 ### Install ExpressJS
 ```
-docker-compose run --rm --user $(id -u):$(id -g) app npm install express
+docker-compose -f docker/docker-compose.dev.yml run --rm --user $(id -u):$(id -g) app npm install express
 ```
 ### Install nodemon for Auto Reload
 ```
-docker-compose run --rm --user $(id -u):$(id -g) app npm install --save-dev nodemon
+docker-compose -f docker/docker-compose.dev.yml run --rm --user $(id -u):$(id -g) app npm install --save-dev nodemon
 ```
 
 ## Prepare Project
@@ -20,11 +20,11 @@ docker-compose run --rm --user $(id -u):$(id -g) app npm install --save-dev node
 2. Add this script on `script` section:
 ```
 "scripts": {
-  "devStart": "nodemon app.js",
+  "server": "nodemon app.js",
 }
 ```
 
 ## Running App
 ```
-docker-compose run --rm --name=belajar-expressjs --user $(id -u):$(id -g) -p 3000:80 app npm run devStart
+docker-compose -f docker/docker-compose.dev.yml up
 ```

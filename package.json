@@ -1,10 +1,10 @@
 {
   "name": "belajar-expressjs",
   "version": "1.0.0",
-  "description": "develop expressjs app with docker",
+  "description": "Develop ExpressJS App with docker",
   "main": "app.js",
   "scripts": {
-    "devStart": "nodemon app.js"
+    "server": "nodemon app.js"
   },
   "repository": {
     "type": "git",
